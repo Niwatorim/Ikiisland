@@ -227,6 +227,18 @@ def render_tourist_content():
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+        
+        /* Style for Expanders (Highlights & Reviews) */
+        div[data-testid="stExpander"] {
+            background-color: #f8f9fa; /* White-ish background */
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 10px;
+        }
+        div[data-testid="stExpander"] > details > summary {
+            font-weight: 600;
+            color: #31333F;
+        }
         </style>
     """, unsafe_allow_html=True)
     
