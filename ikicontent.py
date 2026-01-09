@@ -8,6 +8,7 @@ from streamlit_folium import st_folium
 from folium.plugins import MarkerCluster
 import streamlit.components.v1 as components
 from dotenv import load_dotenv
+import utils
 
 # LangChain-related imports: support multiple package layout versions with fallbacks
 try:
@@ -296,7 +297,7 @@ def render_tourist_content():
             bottom: 30px;
             right: 30px;
             z-index: 1000;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg, #4ECDC4 0%, #556270 100%);
             color: white;
             padding: 15px 25px;
             border-radius: 50px;
@@ -379,6 +380,11 @@ def render_tourist_content():
 
 def main():
     st.set_page_config(page_title="Iki Island Tourist Spots", layout="wide")
+    # Load Custom CSS
+    try:
+        utils.load_css('styles.css')
+    except FileNotFoundError:
+        st.error("styles.css not found. Please ensure it exists.")
     st.header("IKI ISLAND", anchor="ikiisland")
     st.title("Discover Iki Island")
     st.markdown("Explore the hidden treasures of Iki Island")
