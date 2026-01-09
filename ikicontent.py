@@ -230,9 +230,9 @@ def render_tourist_content():
         
         /* Style for Expanders (Highlights & Reviews) */
         div[data-testid="stExpander"] {
-            background-color: #f8f9fa; /* White-ish background */
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Subtle gradient like buttons */
             border-radius: 8px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #c3cfe2;
             margin-bottom: 10px;
         }
         div[data-testid="stExpander"] > details > summary {
