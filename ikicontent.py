@@ -8,10 +8,38 @@ from streamlit_folium import st_folium
 from folium.plugins import MarkerCluster
 import streamlit.components.v1 as components
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_core.documents import Document
-from langchain.chains import ConversationalRetrievalChain
+
+# LangChain-related imports: support multiple package layout versions with fallbacks
+try:
+    from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+except Exception:
+    ChatGoogleGenerativeAI = None
+    GoogleGenerativeAIEmbeddings = None
+
+try:
+    # newer split packages
+    from langchain_community.vectorstores import FAISS
+except Exception:
+    try:
+        from langchain.vectorstores import FAISS
+    except Exception:
+        FAISS = None
+
+try:
+    from langchain_core.documents import Document
+except Exception:
+    try:
+        from langchain.schema import Document
+    except Exception:
+        Document = None
+
+try:
+    from langchain.chains import ConversationalRetrievalChain
+except Exception:
+    try:
+        from langchain_core.chains import ConversationalRetrievalChain
+    except Exception:
+        ConversationalRetrievalChain = None
 
 load_dotenv()
 
@@ -47,14 +75,20 @@ def add_review(spot_id, user_review):
 def load_llm():
     """Cache the LLM instance to prevent reload delays"""
     api_key = os.getenv("GEMINI_API_KEY")
+    if ChatGoogleGenerativeAI is None:
+        raise ImportError("ChatGoogleGenerativeAI is not available. Install 'langchain-google-genai' and restart the app.")
     return ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=api_key, temperature=0)
 
 def get_vector_store(data):
     INDEX_PATH = "faiss_index"
     api_key = os.getenv("GEMINI_API_KEY")
+    if GoogleGenerativeAIEmbeddings is None:
+        raise ImportError("GoogleGenerativeAIEmbeddings is not available. Install 'langchain-google-genai' and restart the app.")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=api_key) 
 
     if os.path.exists(INDEX_PATH):
+        if FAISS is None:
+            raise ImportError("FAISS vectorstore not available. Install 'langchain_community' or compatible 'langchain' package.")
         return FAISS.load_local(INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
     
     if data:
@@ -62,8 +96,13 @@ def get_vector_store(data):
         for item in data:
             content = f"Spot Name: {item.get('name')}. Category: {item.get('category')}. " \
                       f"Description: {item.get('shortDescription')}. Highlights: {', '.join(item.get('highlights', []))}"
+            if Document is None:
+                raise ImportError("Document class is not available from LangChain. Install compatible 'langchain_core' or 'langchain' package.")
             documents.append(Document(page_content=content, metadata={"name": item.get("name")}))
         
+        if FAISS is None:
+            raise ImportError("FAISS vectorstore not available. Install 'langchain_community' or compatible 'langchain' package.")
+
         vector_store = FAISS.from_documents(documents, embeddings)
         vector_store.save_local(INDEX_PATH)
         return vector_store
