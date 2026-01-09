@@ -6,8 +6,6 @@ import streamlit.components.v1 as components
 from ikicontent import render_tourist_content, render_sidebar_chatbot, load_tourist_spots
 st.set_page_config(page_title="Ikikae project -> App demo", layout="wide")
 
-# Custom CSS for styling
-# Custom CSS for styling
 st.markdown("""
 <style>
     /* Import Google Fonts - Nunito (Fun & Rounded) */
@@ -154,10 +152,10 @@ c1, c2, c3 = st.columns([1, 2, 1])
 with c2:
     col_a, col_b = st.columns(2)
     with col_a:
-        if st.button("✨ DISCOVER LOCATIONS", type="primary", use_container_width=True):
+        if st.button("DISCOVER LOCATIONS", type="primary", use_container_width=True):
             scroll_to("Discover")
     with col_b:
-        if st.button("ℹ️ ABOUT PROJECT", use_container_width=True):
+        if st.button("ABOUT PROJECT", use_container_width=True):
             st.session_state.show_about = not st.session_state.show_about
 
 if st.session_state.show_about:

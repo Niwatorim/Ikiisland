@@ -10,7 +10,6 @@ import streamlit.components.v1 as components
 from dotenv import load_dotenv
 import utils
 
-# LangChain-related imports: support multiple package layout versions with fallbacks
 try:
     from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 except Exception:
@@ -18,7 +17,6 @@ except Exception:
     GoogleGenerativeAIEmbeddings = None
 
 try:
-    # newer split packages
     from langchain_community.vectorstores import FAISS
 except Exception:
     try:
@@ -44,7 +42,6 @@ except Exception:
 
 load_dotenv()
 
-# st.set_page_config(page_title="Iki Island Tourist Spots", layout="wide")
 
 def load_tourist_spots():
     json_path = os.path.join(os.path.dirname(__file__), 'tourist_spots.json')
@@ -147,9 +144,8 @@ def render_sidebar_chatbot(tourist_data):
                 full_response = ""
                 
                 try:
-                    # Build chat history as pairs of (human_message, ai_message) tuples
                     history_tuples = []
-                    messages = st.session_state.chat_history[:-1]  # Exclude current user message
+                    messages = st.session_state.chat_history[:-1]
                     for i in range(0, len(messages) - 1, 2):
                         if messages[i]["role"] == "user" and messages[i + 1]["role"] == "assistant":
                             history_tuples.append((messages[i]["content"], messages[i + 1]["content"]))
@@ -217,24 +213,25 @@ def render_tourist_content():
         spot for spot in tourist_spots if spot['category'] == st.session_state.active_category
     ]
 
-    # Add hover animation CSS for st.container(border=True)
     st.markdown("""
         <style>
         div[data-testid="stVerticalBlockBorderWrapper"] > div {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background: rgba(255, 255, 255, 0.95) !important; /* Increased opacity for readability */
-            backdrop-filter: blur(12px); /* Maintain blur */
+            background: rgb(255, 255, 255) !important;
+            border: 1px solid rgba(200,220,240,0.5);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
         div[data-testid="stVerticalBlockBorderWrapper"] > div:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            background: rgb(240, 248, 255) !important;
         }
         
         /* Style for Expanders (Highlights & Reviews) */
         div[data-testid="stExpander"] {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Subtle gradient like buttons */
+            background: linear-gradient(135deg, rgba(245,250,255,0.9) 0%, rgba(225,240,255,0.95) 100%);
             border-radius: 8px;
-            border: 1px solid #c3cfe2;
+            border: 1px solid rgba(195,207,226,0.6);
             margin-bottom: 10px;
         }
         div[data-testid="stExpander"] > details > summary {
@@ -270,16 +267,19 @@ def render_tourist_content():
                         st.markdown(f"### {spot['name']}")
                         
 
-                        st.markdown(spot['shortDescription'])
-                        
 
-                        info_cols = st.columns(3)
-                        with info_cols[0]:
-                            st.caption(f"Location: {spot['distance']}")
-                        with info_cols[1]:
-                            st.caption(f"Duration: {spot['duration']}")
-                        with info_cols[2]:
-                            st.caption(f"Best Time: {spot['bestTime']}")
+                        st.markdown(f"""
+                            <div style="background: linear-gradient(135deg, rgba(245,250,255,0.9) 0%, rgba(225,240,255,0.95) 100%); color: #31333F; padding: 12px; border-radius: 8px; margin: 10px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #e0e0e0;">
+                                <div style="margin-bottom: 12px;">
+                                    {spot['shortDescription']}
+                                </div>
+                                <div style="border-top: 1px solid rgba(0,0,0,0.1); padding-top: 12px; display: flex; justify-content: space-between; gap: 10px;">
+                                    <div><strong>Location:</strong> {spot['distance']}</div>
+                                    <div><strong>Duration:</strong> {spot['duration']}</div>
+                                    <div><strong>Best Time:</strong> {spot['bestTime']}</div>
+                                </div>
+                            </div>
+                        """, unsafe_allow_html=True)
                         
 
                         with st.expander("Highlights"):
