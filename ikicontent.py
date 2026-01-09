@@ -216,6 +216,19 @@ def render_tourist_content():
     filtered_spots = tourist_spots if st.session_state.active_category == 'All' else [
         spot for spot in tourist_spots if spot['category'] == st.session_state.active_category
     ]
+
+    # Add hover animation CSS for st.container(border=True)
+    st.markdown("""
+        <style>
+        div[data-testid="stVerticalBlockBorderWrapper"] > div {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        div[data-testid="stVerticalBlockBorderWrapper"] > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        </style>
+    """, unsafe_allow_html=True)
     
     
     st.markdown("### Tourist Spots")
@@ -381,10 +394,6 @@ def render_tourist_content():
 def main():
     st.set_page_config(page_title="Iki Island Tourist Spots", layout="wide")
     # Load Custom CSS
-    try:
-        utils.load_css('styles.css')
-    except FileNotFoundError:
-        st.error("styles.css not found. Please ensure it exists.")
     st.header("IKI ISLAND", anchor="ikiisland")
     st.title("Discover Iki Island")
     st.markdown("Explore the hidden treasures of Iki Island")
