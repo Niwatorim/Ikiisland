@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "name": "Kojima Shrine",
+    "category": "Sacred Sites",
+    "imageUrl": "https://images.unsplash.com/photo-1667722540871-421aeb3cdc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHNocmluZSUyMHRvcmlpJTIwZ2F0ZXxlbnwxfHx8fDE3NjcxMTE2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "A revered Shinto shrine featuring 150 vermilion torii gates leading to breathtaking ocean views.",
+    "fullHistory": "Established over 1,000 years ago, Kojima Shrine has been a spiritual sanctuary for Iki Island's fishing communities. The shrine is dedicated to the sea deities who protect sailors and ensure bountiful catches. The iconic path of 150 torii gates was donated by grateful fishermen over centuries, each gate representing prayers answered and safe returns from the sea.\n\nDuring the Edo period, the shrine became a pilgrimage site for merchants traveling between Japan and the Korean Peninsula. The shrine's priests maintained detailed records of maritime activities, making it an important historical archive. Today, the shrine continues its sacred role, hosting annual festivals where locals pray for maritime safety and prosperity.",
+    "meaning": "Kojima Shrine embodies the deep connection between Iki Islanders and the sea. It represents gratitude, respect for nature's power, and the spiritual protection that has guided generations of seafarers. The torii pathway symbolizes the journey from the worldly realm to the divine.",
+    "distance": "8 km from port",
+    "bestTime": "April-November",
+    "duration": "1-2 hours",
+    "highlights": [
+      "150 vermilion torii gates",
+      "Panoramic ocean views",
+      "Ancient cedar trees",
+      "Traditional omikuji fortune papers"
+    ],
+    "coordinates": [
+      33.8015,
+      129.7235
+    ],
+    "user_reviews": [
+      {
+        "content": "Verified review created at 2026-01-06 09:13:36",
+        "timestamp": "2026-01-06 09:13:36"
+      },
+      {
+        "content": "Very cool place, I recommend",
+        "timestamp": "2026-01-06 09:16:46"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Haranosho Beach",
+    "category": "Natural Beauty",
+    "imageUrl": "https://images.unsplash.com/photo-1732564930153-513863c3a8c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2FzdGFsJTIwamFwYW4lMjBiZWFjaHxlbnwxfHx8fDE3NjcxMTE2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "A pristine white sand beach with crystal-clear emerald waters, perfect for swimming and snorkeling.",
+    "fullHistory": "Haranosho Beach has been the jewel of Iki Island for centuries, mentioned in historical texts dating back to the Nara period (710-794 AD). The beach's unique white sand is composed of crushed shells and coral, created over millennia by the Tsushima Current.\n\nDuring the Meiji era, the beach became known for pearl diving, with ama (female divers) harvesting abalone and sea urchins. In 1965, Haranosho was designated as part of the Iki-Tsushima Quasi-National Park, protecting its pristine environment. Today, it's celebrated as one of Japan's top 100 beaches, attracting visitors who seek tranquility away from urban centers.",
+    "meaning": "Haranosho represents the pure, unspoiled beauty of Iki Island. It's a place where locals have gathered for generations during summer festivals, creating memories and strengthening community bonds. The beach symbolizes the island's commitment to preserving nature for future generations.",
+    "distance": "12 km from port",
+    "bestTime": "June-September",
+    "duration": "2-4 hours",
+    "highlights": [
+      "White shell sand",
+      "Snorkeling spots",
+      "Beach camping facilities",
+      "Sunset viewing"
+    ],
+    "coordinates": [
+      33.7892,
+      129.6123
+    ],
+    "user_reviews": [
+      {
+        "content": "Really nice!",
+        "timestamp": "2026-01-09 17:10:39"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Sakyobana Park",
+    "category": "Scenic Viewpoints",
+    "imageUrl": "https://images.unsplash.com/photo-1633703384611-41eb774a6d3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMGlzbGFuZCUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NjcxMTE2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "A dramatic clifftop park offering spectacular 360-degree views of the Genkai Sea and distant islands.",
+    "fullHistory": "Sakyobana, meaning 'Left Minister's Cape,' was named during the Heian period when a court noble shipwrecked here found refuge. The cape has served as a crucial navigation landmark for ships traveling the Korea Strait for over 1,500 years.\n\nDuring World War II, the area was fortified with observation posts, remnants of which can still be seen today. In 1971, the area was transformed into a public park, featuring walking trails, observation decks, and seasonal flower gardens. The park showcases Iki's unique basalt rock formations, created by ancient volcanic activity millions of years ago.",
+    "meaning": "Sakyobana represents Iki's strategic importance in maritime history and its enduring natural grandeur. The park is a place of reflection, where visitors contemplate the vastness of the sea and Japan's connection to the Asian continent.",
+    "distance": "15 km from port",
+    "bestTime": "March-May, September-November",
+    "duration": "1.5-3 hours",
+    "highlights": [
+      "Volcanic basalt cliffs",
+      "Korea strait views",
+      "Walking trails",
+      "Seasonal flower fields"
+    ],
+    "coordinates": [
+      33.8125,
+      129.7445
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Iki Shochu Distilleries",
+    "category": "Cultural Heritage",
+    "imageUrl": "https://images.unsplash.com/photo-1745389501027-2797461950b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGphcGFuZSUyMGRpc3RpbGxlcnklMjBzYWtlfGVufDF8fHx8MTc2NzExMTY3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "Traditional distilleries producing Iki's renowned barley shochu using methods passed down for 500 years.",
+    "fullHistory": "Iki has been producing shochu since the 16th century, making it one of Japan's oldest shochu-producing regions. The island's unique barley shochu, known for its smooth, sweet flavor, was designated as a Geographic Indication in 1995—the first such designation for shochu in Japan.\n\nThe distillation technique was introduced from the Ryukyu Kingdom (Okinawa) and adapted to Iki's superior barley and pure spring water. Seven distilleries continue operations today, each maintaining family traditions spanning generations. During the Edo period, Iki shochu was served in the Fukuoka domain's castle and became a treasured gift among samurai.",
+    "meaning": "The shochu distilleries represent Iki's craftsmanship, patience, and pride. Each bottle contains the essence of the island—its water, grains, and the accumulated wisdom of master distillers. The tradition symbolizes the island's ability to preserve culture while achieving excellence.",
+    "distance": "3-10 km from port",
+    "bestTime": "Year-round",
+    "duration": "2-3 hours",
+    "highlights": [
+      "Traditional distillery tours",
+      "Shochu tasting sessions",
+      "Historic earthenware pots",
+      "Meet master distillers"
+    ],
+    "coordinates": [
+      33.7456,
+      129.6934
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Monkey Rock (Saruiwa)",
+    "category": "Natural Wonders",
+    "imageUrl": "https://images.unsplash.com/photo-1764198743846-9eae3112d04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbiUyMGNvYXN0YWwlMjByb2Nrc3xlbnwxfHx8fDE3NjcxMTE2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "A remarkable coastal rock formation that perfectly resembles a monkey gazing across the ocean.",
+    "fullHistory": "This natural basalt formation, standing 45 meters tall, was created approximately 7 million years ago during volcanic activity that shaped Iki Island. The rock has been a landmark for sailors for centuries, mentioned in Edo-period navigation guides.\n\nLocal legend tells of a divine monkey sent by the gods to watch over fishermen. The formation became so beloved that it was designated as a Natural Monument of Nagasaki Prefecture in 1956. Photographers from across Japan visit to capture its uncanny resemblance to a primate's profile, especially dramatic during golden hour.",
+    "meaning": "Monkey Rock symbolizes nature's artistry and the island's geological heritage. For locals, it represents the watchful spirits protecting Iki's shores. It reminds visitors of the power of natural forces and the importance of preserving these irreplaceable formations.",
+    "distance": "18 km from port",
+    "bestTime": "Year-round (sunset ideal)",
+    "duration": "30-60 minutes",
+    "highlights": [
+      "Photogenic rock formation",
+      "Coastal walking path",
+      "Sunset photography",
+      "Marine birdwatching"
+    ],
+    "coordinates": [
+      33.7234,
+      129.7856
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tsukiyomi Shrine",
+    "category": "Sacred Sites",
+    "imageUrl": "https://images.unsplash.com/photo-1667722540871-421aeb3cdc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMHNocmluZSUyMHRvcmlpJTIwZ2F0ZXxlbnwxfHx8fDE3NjcxMTE2NzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "One of Japan's oldest shrines, dedicated to the moon deity mentioned in the ancient chronicle Kojiki.",
+    "fullHistory": "Founded before the 8th century, Tsukiyomi Shrine is dedicated to Tsukiyomi-no-Mikoto, the Shinto moon deity. The shrine is mentioned in the Engishiki (927 AD) as one of the 2,861 notable shrines in Japan, highlighting its ancient prestige.\n\nAccording to tradition, Iki was the birthplace of the moon god, making this shrine a sacred pilgrimage site. The current main hall was rebuilt in 1655 but maintains the architectural style of the Heian period. The shrine houses valuable cultural properties, including 8th-century bronze mirrors and ancient wooden tablets bearing prayers from emperors.",
+    "meaning": "Tsukiyomi Shrine connects Iki Island to Japan's mythological origins. It represents the island's role in the spiritual foundation of the nation and the enduring reverence for celestial deities. The shrine embodies the harmony between heaven and earth.",
+    "distance": "6 km from port",
+    "bestTime": "Year-round (new moon/full moon special)",
+    "duration": "1-2 hours",
+    "highlights": [
+      "Ancient shrine architecture",
+      "Sacred forest grove",
+      "Cultural property artifacts",
+      "Traditional kagura performances"
+    ],
+    "coordinates": [
+      33.7523,
+      129.6845
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Tatsunoshima Island Bridge",
+    "category": "Scenic Viewpoints",
+    "imageUrl": "https://images.unsplash.com/photo-1737827037381-fd4ca449dd1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWQlMjBicmlkZ2UlMjBqYXBhbnxlbnwxfHx8fDE3NjcxMTE2Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "An elegant red bridge connecting to a tiny island with a shrine, offering stunning coastal vistas.",
+    "fullHistory": "Built in 1991, this 90-meter pedestrian bridge connects Iki's main island to Tatsunoshima ('Dragon Island'), a sacred islet named for its serpentine shape. The island has housed a small shrine for over 300 years, where fishermen prayed for safety before voyages.\n\nBefore the bridge, the island was only accessible during low tide via a natural sandbar. The distinctive red color honors traditional shrine architecture and creates a striking contrast against the blue sea. The bridge has become one of Iki's most photographed locations, especially during cherry blossom season when trees on both sides bloom spectacularly.",
+    "meaning": "The Tatsunoshima Bridge represents the connection between sacred and secular worlds, and between past traditions and modern accessibility. It symbolizes Iki's commitment to preserving spiritual sites while welcoming visitors to experience their beauty.",
+    "distance": "20 km from port",
+    "bestTime": "March-May, October-November",
+    "duration": "1-1.5 hours",
+    "highlights": [
+      "Iconic red bridge",
+      "Small island shrine",
+      "Cherry blossoms (spring)",
+      "Rock pool exploration"
+    ],
+    "coordinates": [
+      33.7678,
+      129.7623
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Yunomoto Onsen",
+    "category": "Wellness & Relaxation",
+    "imageUrl": "https://images.unsplash.com/photo-1688047976588-55ec398e0436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMG9uc2VuJTIwaG90JTIwc3ByaW5nfGVufDF8fHx8MTc2NzExMTY3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "shortDescription": "Natural hot springs with therapeutic mineral waters, offering ocean views and traditional bathing culture.",
+    "fullHistory": "Yunomoto Onsen has been soothing travelers for over 1,700 years, first documented in the 8th-century chronicle 'Nihon Shoki.' The hot springs are fed by underground volcanic activity, producing mineral-rich waters at a perfect 42°C (108°F).\n\nDuring the Kamakura period, wounded samurai sought healing in these waters. In the Edo period, the onsen became a popular stop for Korean envoys traveling to Edo (Tokyo). The water contains high concentrations of sodium chloride and iron, renowned for treating muscle fatigue and improving circulation. Several traditional ryokan (inns) preserve bathing customs from centuries past.",
+    "meaning": "Yunomoto Onsen embodies the Japanese concept of 'yu-ame' (healing through water) and represents rest, renewal, and respect for nature's gifts. It's where locals have gathered for communal bonding and where travelers find respite from their journeys.",
+    "distance": "5 km from port",
+    "bestTime": "Year-round (winter especially popular)",
+    "duration": "2-4 hours",
+    "highlights": [
+      "Ocean-view outdoor baths",
+      "Mineral-rich healing waters",
+      "Traditional ryokan inns",
+      "Seasonal local cuisine"
+    ],
+    "coordinates": [
+      33.7389,
+      129.7012
+    ]
+  }
+]
