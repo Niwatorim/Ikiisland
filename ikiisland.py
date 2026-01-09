@@ -4,7 +4,6 @@ from streamlit_folium import st_folium
 import base64
 import streamlit.components.v1 as components
 from ikicontent import render_tourist_content, render_sidebar_chatbot, load_tourist_spots
-import utils
 st.set_page_config(page_title="Ikikae project -> App demo", layout="wide")
 
 # Custom CSS for styling
