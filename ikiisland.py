@@ -10,8 +10,8 @@ st.set_page_config(page_title="Ikikae project -> App demo", layout="wide")
 # Custom CSS for styling
 st.markdown("""
 <style>
-    /* Import Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap');
+    /* Import Google Fonts - Nunito (Fun & Rounded) */
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
 
     /* Global App Background */
     .stApp {
@@ -24,14 +24,17 @@ st.markdown("""
     }
     
     /* Typography */
+    /* Typography */
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Playfair Display', serif !important;
+        font-family: 'Nunito', sans-serif !important;
+        font-weight: 800 !important;
         color: #1a237e !important;
         text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Changed to white shadow for dark text */
     }
     
     p, div, label, span, li {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
         color: #004d40; /* Dark teal for readability */
         text-shadow: 0 1px 1px rgba(255,255,255,0.8);
     }
