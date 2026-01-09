@@ -222,6 +222,8 @@ def render_tourist_content():
         <style>
         div[data-testid="stVerticalBlockBorderWrapper"] > div {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: rgba(255, 255, 255, 0.95) !important; /* Increased opacity for readability */
+            backdrop-filter: blur(12px); /* Maintain blur */
         }
         div[data-testid="stVerticalBlockBorderWrapper"] > div:hover {
             transform: translateY(-5px);
